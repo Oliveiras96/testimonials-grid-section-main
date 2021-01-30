@@ -1,0 +1,174 @@
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.item1 {
+    background: hsl(263, 55%, 52%);
+    color:  hsl(210, 46%, 95%);
+}
+
+.item2 {
+    background-color:  hsl(217, 19%, 35%);
+    color:  hsl(210, 46%, 95%);
+}
+
+.item3 {
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+}
+
+.item4 {
+    background-color: hsl(219, 29%, 14%);
+    color:  hsl(210, 46%, 95%);
+}
+
+.item5 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+.item1 .profile-pic {
+    border: 2px solid hsl(263, 40%, 59%);   
+}
+
+.item4 .profile-pic {
+    border: 2px solid hsl(263, 55%, 52%); 
+}
+
+.testimonial-card {
+    width: 100%;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.author-info {
+    margin: 0 20px;
+    padding-top: 4px;
+}
+
+.stats {
+    opacity: 50%;
+}
+
+b .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid inherit;
+}
+
+.testimonial {
+    width: 90%;
+    line-height: 1.5em;
+}
+
+.testimonial h3 {
+    font-size: 20px;
+}
+
+.testimonial p {
+    opacity: 70%;
+}
+
+.attribution {
+    color: hsl(217, 19%, 35%);
+    opacity: 70%;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 375px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-container {
+        margin-top: 60px;
+        margin-bottom: 50px;
+        width: 85%;
+    }
+
+    .testimonial-card {
+        margin-bottom: 20px;
+        padding: 25px;
+    }
+}
+
+
+/* Desktop grid layout */
+@media only screen and (min-width: 376px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .grid-container {  
+        width: 65vw;
+        height: 1vh;
+        display: grid;
+        column-gap: 1.5vw;
+        row-gap: 3vh;
+        margin-top: 15vh;
+    }
+    
+    .item1 {
+        padding: 4% 4% 4% 4%;
+        grid-column: 1 / span 2;
+        grid-row: 1; 
+    }
+    
+    .item2 {
+        padding: 8% 8% 4% 8%; 
+    }
+    
+    .item3 {
+        padding: 8% 8% 4% 8%;
+        grid-column: 1;
+        grid-row: 2;    
+    }
+    
+    .item4 {
+        padding: 4% 4% 4% 4%;
+        grid-column: 2 / span 2;
+        grid-row: 2;   
+    }
+    
+    .item5 {
+        padding: 8% 8% 4% 8%;
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 5px;
+    }
+}
