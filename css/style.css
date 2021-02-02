@@ -44,17 +44,12 @@ body {
 .testimonial-card {
     width: 100%;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .profile-header {
     display: flex;
     flex-direction: row;
-}
-
-.author-info {
-    margin: 0 20px;
-    padding-top: 4px;
 }
 
 .stats {
@@ -66,20 +61,8 @@ b .name {
     flex-direction: column;
 }
 
-.profile-pic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid inherit;
-}
-
-.testimonial {
-    width: 90%;
-    line-height: 1.5em;
-}
-
 .testimonial h3 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .testimonial p {
@@ -110,15 +93,40 @@ a {
     .grid-container {
         margin-top: 60px;
         margin-bottom: 50px;
-        width: 85%;
+        width: 90%;
     }
 
     .testimonial-card {
         margin-bottom: 20px;
         padding: 25px;
+        text-align: left;
+    }
+
+    .profile-pic {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid inherit;
+    }
+
+    .author-info {
+        margin: -6px 20px;
+        padding-top: 5px;
+    }
+
+    .testimonial {
+        width: 100%;
+        line-height: 1.5em;
+    }
+
+    .item1 {
+        background-image: url("../images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: 50vw 0;
     }
 }
 
+/* Try to fix the text tabulation to match the design  */
 
 /* Desktop grid layout */
 @media only screen and (min-width: 376px) {
@@ -131,44 +139,65 @@ a {
     }
     
     .grid-container {  
-        width: 65vw;
+        width: 60vw;
         height: 1vh;
         display: grid;
         column-gap: 1.5vw;
         row-gap: 3vh;
         margin-top: 15vh;
     }
+
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid inherit;
+    }
+
+    .author-info {
+        margin: 0 20px;
+        padding-top: 4px;
+    }
+
+    .testimonial {
+        width: 100%;
+        line-height: 1.5em;
+    }
     
     .item1 {
-        padding: 4% 4% 4% 4%;
+        padding: 5% 6% 4% 6%;
         grid-column: 1 / span 2;
         grid-row: 1; 
+        background-image: url("../images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: 80% 0;
+        
     }
     
     .item2 {
-        padding: 8% 8% 4% 8%; 
+        padding: 8% 10% 4% 10%; 
     }
     
     .item3 {
-        padding: 8% 8% 4% 8%;
+        padding: 8% 10% 4% 10%;
         grid-column: 1;
         grid-row: 2;    
     }
     
     .item4 {
-        padding: 4% 4% 4% 4%;
+        padding: 5% 6% 4% 6%;
         grid-column: 2 / span 2;
         grid-row: 2;   
     }
     
     .item5 {
-        padding: 8% 8% 4% 8%;
+        padding: 8% 10% 4% 10%;
         grid-column: 4;
         grid-row: 1 / span 2;
     }
 
     .attribution {
         position: absolute;
-        bottom: 5px;
+        bottom: 6px;
     }
 }
